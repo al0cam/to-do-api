@@ -10,5 +10,3 @@ services:
       - POSTGRES_PASSWORD=postgres
     ports:
       - '5400:5432'
-
-
