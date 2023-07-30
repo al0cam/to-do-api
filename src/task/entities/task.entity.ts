@@ -2,7 +2,7 @@ export class Task {
     id: number;
     title: string;
     description: string;
-    done: boolean;
+    completion: boolean;
     createAt: Date;
     updateAt: Date;
 }
