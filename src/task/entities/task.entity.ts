@@ -5,4 +5,5 @@ export class Task {
     completion: boolean;
     createAt: Date;
     updateAt: Date;
+    deletedAt: Date;
 }
