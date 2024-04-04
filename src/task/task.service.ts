@@ -65,9 +65,12 @@ export class TaskService {
 
   async remove(id: number) {
     try {
-      return await prisma.task.delete({
+      return await prisma.task.update({
         where: {
           id: id
+        },
+        data: {
+          deletedAt: new Date()
         }
       })
     } catch (error) {
